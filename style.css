@@ -1,0 +1,58 @@
+body {
+  display: block;
+  height: screen;
+  width: 100%;
+  background: #009fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.keys {
+  display: flex;
+  width: 100%;
+  padding: 0.25rem;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  place-content: center;
+}
+
+.key {
+  display: flex;
+  padding: 0.5rem 0.25rem;
+  margin: 0.5rem;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border: 1px solid rgba(245, 245, 245, 0.75);
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(20px);
+  height: 4.25em;
+  width: 4.25em;
+  color: rgba(245, 245, 245, 0.85);
+  transition: all 0.8s;
+}
+
+kbd {
+  font: 300 xx-large "Times New Roman", Times, serif;
+}
+
+.sound {
+  font: italic 100 medium cursive;
+  font-stretch: extra-expanded;
+  color: hsla(0, 0%, 96%, 0.65);
+}
