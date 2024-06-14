@@ -46,6 +46,18 @@ nav > div {
   margin: 0.5rem;
 }
 
+#info {
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: rgba(245, 245, 245, 0.85);
+  font: 600 x-large "Courier New", Courier, monospace;
+  justify-content: center;
+}
+
 .keys {
   display: flex;
   width: 100%;
@@ -58,6 +70,7 @@ nav > div {
   flex-wrap: nowrap;
   justify-content: space-around;
   place-content: center;
+  flex-grow: 1;
 }
 
 .key {
@@ -72,8 +85,8 @@ nav > div {
   border-radius: 0.25rem;
   background-color: rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(20px);
-  height: 4.25em;
-  width: 4.25em;
+  min-height: 4.25em;
+  min-width: 4.25em;
   color: rgba(245, 245, 245, 0.85);
   transition: all 0.08s;
 }
