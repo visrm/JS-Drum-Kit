@@ -1,3 +1,8 @@
+@font-face {
+  font-family: mighty-souly;
+  src: url(assets/MightySouly-lxggD.ttf);
+}
+
 body {
   display: block;
   padding: 0;
@@ -18,14 +23,27 @@ body {
 }
 
 nav {
+  display: flex;
+  align-items: center;
   margin: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(16px);
   border-radius: 2rem;
-  font: 600 xx-large serif;
+  font: 300 xx-large mighty-souly;
   color: rgba(255, 255, 255, 0.82);
-  padding: 1.25rem;
+  padding: 1rem;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 1.75rem;
+}
+
+#logo {
+  margin: 0.5rem;
 }
 
 .keys {
@@ -37,7 +55,6 @@ nav {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   place-content: center;
@@ -62,7 +79,7 @@ nav {
 }
 
 kbd {
-  font: 600 xx-large "Courier New", Courier, monospace;
+  font: 300 xx-large mighty-souly;
 }
 
 .sound {
