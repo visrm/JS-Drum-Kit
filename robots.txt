@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://js-drum-kit-two.vercel.app/sitemap.xml
